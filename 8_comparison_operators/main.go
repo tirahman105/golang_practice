@@ -4,13 +4,18 @@ import "fmt"
 
 func main() {
 
-	var (
-		a = 5
-		b = 12
-	)
+	fmt.Print("Enter first number : ")
+	var a int
 
-	fmt.Printf(" a = %d \n", a)
-	fmt.Printf(" b = %d \n", b)
+	fmt.Scanln(&a)
+
+	fmt.Print("Enter second number : ")
+	var b int
+
+	fmt.Scanln(&b)
+
+	fmt.Println("First number a =", a)
+	fmt.Println("Second number b =", b)
 
 	fmt.Print(" Is a greater than b ? ")
 	// a is greater than b
